@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <center>
+        <h1>
+            Cadastro de Serviços
+        </h1>
+    </center>
+</div>
+
+<div class="row" style="margin-top:4%" id=" formulario">
+
+
+    <strong>Cliente:</strong>
+    <input class="form-control" id="txtCliente" />
+
+    <strong>Data:</strong>
+    <input class="form-control" id="txtData" type="date" />
+
+    <strong>Vendedor:</strong>
+    <input class="form-control" id="txtVendedor" />
+
+    <strong>Descrição:</strong>
+    <input class="form-control" id="txtDescricao">
+
+    <strong>Valor orçado:</strong>
+    <input class="form-control" id="txtValor" type="number">
+</div>
+<center>
+    <button class="btn btn-primary" id="btnSalvar" style="margin-top:4%">Cadastrar</button>
+</center>
+
+
+@section scripts{
+<script src="~/js/site.js"></script>
+ }

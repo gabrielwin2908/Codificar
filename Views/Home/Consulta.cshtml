@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewData["Title"] = "Consulta";
+}
+    <div id="consulta">
+        <center>
+            <h1>Pesquisa de orçamento</h1>
+
+        </center>
+        <style>
+            table {
+                margin-top: 3%;
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+        <strong>Consulta</strong>
+        <input id="txtFiltro" display:flex style="margin-right: 16.5%;">
+        <table id="tabela">
+            <tr>
+                <th>Cliente</th>
+                <th>Data</th>
+                <th>Vendedor</th>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Deletar</th>
+
+
+
+            </tr>
+            @Html.Raw(ViewBag.orcamentos)
+        </table>
+
+
+
+    </div>
+
+
+@section scripts{
+    <script src="~/js/site.js"></script>
+
+}
